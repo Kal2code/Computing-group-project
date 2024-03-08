@@ -75,7 +75,7 @@ header .nav-bar{
 .navigation .nav-items a:after{
     content: "";
     position: absolute;
-    background-color: var(--hover-color);
+    background-color: var(--dark-color);
     height: 15%;
     width: 0;
     left: 0;
@@ -84,7 +84,7 @@ header .nav-bar{
 }
 .navigation .nav-items a:hover{
     font-weight: 600;
-    color: var(--hover-color);
+    color: var(--dark-color);
 }
 .navigation .nav-items a:hover:after{
     width: 100%;
