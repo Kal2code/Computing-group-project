@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Safari Sync/Driver Registration</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    </head>
+    <body style="background-image: url('background.jpg'); background-size: cover; font-family: 'Poppins', sans-serif;">
+
+        <div style="position: relative; display: flex; justify-content: center; align-items: center; height: 20px; background-color: rgba(255, 255, 255, 0.1); border: 1px solid rgba(0, 0, 0, 0); padding: 20px;">
+            <img class="logo1" src="logo.png" style="position: absolute; left: 0; height: 55px; width: 65px;">
+            <div style="display: flex; justify-content: flex-end; position: absolute; right: 0;">
+                <a href="home.html" style="color: black; text-decoration: none; margin-right: 20px;">
+                    <button style="background-color: #848484; color: white; border: none; padding: 10px 20px; border-radius: 5px; font-weight: 600; transition: background-color 0.3s ease; cursor: pointer;"
+                    onmouseover="this.style.backgroundColor='#8a4226'" onmouseout="this.style.backgroundColor='#9a492c'">HOME</button>
+                </a>
+                <a href="plan a trip.html" style="color: black; text-decoration: none; margin-right: 20px;">
+                    <button style="background-color: #848484; color: white; border: none; padding: 10px 20px; border-radius: 5px; font-weight: 600; transition: background-color 0.3s ease; cursor: pointer;"
+                    onmouseover="this.style.backgroundColor='#8a4226'" onmouseout="this.style.backgroundColor='#9a492c'">PLAN A TRIP</button>
+                </a>
+                <a href="driver.html" style="color: black; text-decoration: none; margin-right: 20px;">
+                    <button style="background-color:  #848484; color: white; border: none; padding: 10px 20px; border-radius: 5px; font-weight: 600; transition: background-color 0.3s ease; cursor: pointer;"
+                    onmouseover="this.style.backgroundColor='#8a4226'" onmouseout="this.style.backgroundColor='#9a492c'">REGISTRATION</button>
+                </a>
+                <a href="sign-up.html" style="color: black; text-decoration: none; margin-right: 20px;">
+                    <button style="background-color:  #848484; color: white; border: none; padding: 10px 20px; border-radius: 5px; font-weight: 600; transition: background-color 0.3s ease; cursor: pointer;"
+                    onmouseover="this.style.backgroundColor='#8a4226'" onmouseout="this.style.backgroundColor='#9a492c'">SIGN UP</button>
+                </a>
+                <a href="safari.html" style="color: black; text-decoration: none; margin-right: 20px;">
+                    <button style="background-color: #848484; color: white; border: none; padding: 10px 20px; border-radius: 5px; font-weight: 600; transition: background-color 0.3s ease; cursor: pointer;"
+                    onmouseover="this.style.backgroundColor='#8a4226'" onmouseout="this.style.backgroundColor='#9a492c'">ABOUT US</button>
+                </a>
+            </div>
+        </div>
+
+      <div style="text-align: center; display: inline-block; background-color: rgba(0, 0, 0, 0.2); border: 1px solid rgba(0, 0, 0, 0); padding: 20px; margin-top: 50px;">
+        <form class="form" style="text-align: left;" action="#" method="post" enctype="multipart/form-data">
+
+          <div style="display: flex; flex-direction: column; align-items: center; padding: 20px; background-color: rgba(153, 67, 10, 0.193); border: 1px solid rgba(0, 0, 0, 0); border-radius: 10px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+            <form class="form" style="width: 100%; max-width: 600px; text-align: left;" action="#" method="post" enctype="multipart/form-data">
+
+              <div style="text-align: left; display: flex; flex-direction: column; align-items: flex-start; color: white;">
+                <label style="width: 100%;" for="name">Name:</label>
+                <input style="width: 100%;" type="text" id="name" name="name" required>
+              </div>
+
+              <div style="text-align: left; display: flex; flex-direction: column; align-items: flex-start; color: white;">
+                <label style="width: 100%;" for="nic">NIC:</label>
+                <input style="width: 100%;" type="text" id="nic" name="nic" required>
+              </div>
+
+              <div style="text-align: left; display: flex; flex-direction: column; align-items: flex-start; color: white;">
+                <label style="width: 100%;" for="age">Age:</label>
+                <input style="width: 100%;" type="number" id="age" name="age" min="1" max="120" required>
+              </div>
+
+              <div style="text-align: left; display: flex; flex-direction: column; align-items: flex-start; color: white;">
+                <label style="width: 100%;" for="contact">Contact Number:</label>
+                <input style="width: 100%;" type="tel" id="contact" name="contact" pattern="[0-9]{11}" required>
+              </div>
+
+              <div style="text-align: left; display: flex; flex-direction: column; align-items: flex-start; color: white;">
+                <label style="width: 100%;" for="vehicle">Vehicle number:</label>
+                <input style="width: 100%;" type="text" id="vehicle" name="vehicle" required>
+              </div>
+
+              <div style="text-align: left; display: flex; flex-direction: column; align-items: flex-start; color: white;">
+                <label style="width: 100%;" for="license">Approved driving license:</label>
+                <input style="width: 100%;" type="text" id="license" name="license" required>
+              </div>
+
+              <div style="text-align: left; display: flex; flex-direction: column; align-items: flex-start; color: white;">
+                <label style="width: 100%;" for="profile">Profile photo:</label>
+                <input style="width: 100%;" type="file" id="profile" name="profile" accept="image/*" required>
+              </div>
+
+              <div style="text-align: left; display: flex; flex-direction: column; align-items: flex-start; color: white;">
+                <label style="width: 100%;" for="wildlife">Wildlife department approval:</label>
+                <input style="width: 100%;" type="file" id="wildlife" name="wildlife" required>
+              </div>
+              <div style="text-align: center;">
+                <button style="padding: 10px 20px; margin-top: 10px; font-size: 16px; background-color: #201a03; color: white; border: none; border-radius: 4px;" type="submit">Submit</button>
+              </div>
+          </div>
+      
+
+    </body>
+</html>
+</html>
+
